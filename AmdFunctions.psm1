@@ -63,7 +63,7 @@ function Import-CsvWithDuplicate($Path, $Delimiter=',', $Encoding='UTF8')
         $newheader
     })
 
-    # read the CSV without its own headers..
+    # read the CSV without its own headers..lakhmani
     Get-Content -Path $Path -Encoding $Encoding | 
       Select-Object -Skip 1 |
       # ..and replace headers with newly created list
